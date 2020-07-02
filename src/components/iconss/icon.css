@@ -1,0 +1,20 @@
+.icons {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+  background: inherit;
+}
+.icons i {
+  color: #a5c7c5;
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 560px) {
+  .icons {
+    padding: 2.5rem 0.5rem;
+  }
+
+  .icons i {
+    font-size: 1.2rem;
+  }
+}
