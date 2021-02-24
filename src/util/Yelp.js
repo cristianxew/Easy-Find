@@ -4,7 +4,7 @@ const apiKey =
 const yelp = {
   async search(term, location, sortBy) {
     const response = await fetch(
-      `https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`,
+      `https://api.allorigins.win/raw?url=https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`,
       {
         headers: {
           Authorization: `Bearer ${apiKey}`,
@@ -14,7 +14,6 @@ const yelp = {
     const jsonResponse = await response.json();
     if (jsonResponse.businesses) {
       return jsonResponse.businesses.map((business) => {
-        console.log(business);
         return {
           id: business.id,
           imageSrc: business.image_url,

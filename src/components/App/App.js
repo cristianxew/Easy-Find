@@ -1,12 +1,9 @@
 import React from "react";
-import "../../App.css";
 import BusinessList from "../bussinessList/bussinessList";
 import SearchBar from "../searchBar/searchBar";
 import Icon from "../iconss/icon";
-
 import yelp from "../../util/Yelp";
-
-//const businesses = yelp.search;
+import "../../App.css";
 
 class App extends React.Component {
   constructor(props) {
